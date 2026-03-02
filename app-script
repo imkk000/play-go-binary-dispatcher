@@ -1,0 +1,5 @@
+#!/usr/bin/env fish
+
+echo load module from shell script
+echo args= $argv
+echo pid= $fish_pid
