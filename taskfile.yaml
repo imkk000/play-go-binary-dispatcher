@@ -2,8 +2,16 @@
 version: 3
 
 tasks:
+  completion: go run ./module/completion/main.go completion json | jq
   build:
+    cmds:
+      - rm -rf ./bin
+      - mkdir bin
+      - go build -o bin/app-time ./module/time/main.go
+      - go build -o bin/app-json ./module/json/main.go
+      - go build -o app .
+  build_simple:
     cmds:
       - go build -o app-add ./module/additional/main.go
       - go build -o app-sub ./module/subtraction/main.go
-      - go build -o app main.go
+      - go build -o app ./cmd/main.go
