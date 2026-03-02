@@ -1,0 +1,9 @@
+---
+version: 3
+
+tasks:
+  build:
+    cmds:
+      - go build -o app-add ./module/additional/main.go
+      - go build -o app-sub ./module/subtraction/main.go
+      - go build -o app main.go
