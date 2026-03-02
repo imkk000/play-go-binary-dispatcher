@@ -5,9 +5,9 @@
 - git (git-shell) -> `git shell`
 - docker (docker-compose) -> `docker compose`
 - app (app-sub, app-add) -> `app sub` and `app add`
-- It is `composition pattern`
+- It is `composite pattern`
 
-## Step composition pattern
+## Step composite pattern
 
 1. `task build` to build `app-json` and `app-time` to `bin` directory
 2. Run `./app get time now` or `./app get json`. They must show difference exec debug command
